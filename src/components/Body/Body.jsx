@@ -1,9 +1,13 @@
+import { useSelector } from 'react-redux';
 import './Body.css'
 
-const Body = (props) => {
+const Body = () => {
+
+    const pageIndex = useSelector(state => state.myPageIndex);
+
     return ( 
         <div className="body">
-            {props.pageIndex}
+            Page Index: {pageIndex}
         </div>
     );
 }

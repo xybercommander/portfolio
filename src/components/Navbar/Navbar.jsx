@@ -1,12 +1,15 @@
-import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { pageChange } from '../../actions';
 import './Navbar.css'
 
 const Navbar = () => {
-    const [index, setIndex] = useState(0);
+    // const [index, setIndex] = useState(0);
+    const pageIndex = useSelector(state => state.myPageIndex);
+    const dispatch = useDispatch();
 
     function changeIndex(e, newIndex) {
         e.preventDefault();
-        setIndex(newIndex);
+        dispatch(pageChange(newIndex));
     }
 
     return ( 
@@ -18,44 +21,44 @@ const Navbar = () => {
             <ul>
                 {/* 1 */}
                 <li 
-                    className={index === 0 ? 'selected-li' : 'normal-li'}
+                    className={pageIndex === 0 ? 'selected-li' : 'normal-li'}
                     onClick={(e) => changeIndex(e, 0)}
                 >
                     {
-                        (index === 0)
+                        (pageIndex === 0)
                             ? <div>&lt; Services &gt;</div>
                             : <div>Services</div>
                     }
                 </li>
                 {/* 2 */}
                 <li 
-                    className={index === 1 ? 'selected-li' : 'normal-li'}
+                    className={pageIndex === 1 ? 'selected-li' : 'normal-li'}
                     onClick={(e) => changeIndex(e, 1)}
                 >
                     {
-                        (index === 1)
+                        (pageIndex === 1)
                             ? <div>&lt; Works &gt;</div>
                             : <div>Works</div>
                     }
                 </li>
                 {/* 3 */}
                 <li 
-                    className={index === 2 ? 'selected-li' : 'normal-li'}
+                    className={pageIndex === 2 ? 'selected-li' : 'normal-li'}
                     onClick={(e) => changeIndex(e, 2)}
                 >
                     {
-                        (index === 2)
+                        (pageIndex === 2)
                             ? <div>&lt; Notes &gt;</div>
                             : <div>Notes</div>
                     }
                 </li>
                 {/* 4 */}
                 <li 
-                    className={index === 3 ? 'selected-li' : 'normal-li'}
+                    className={pageIndex === 3 ? 'selected-li' : 'normal-li'}
                     onClick={(e) => changeIndex(e, 3)}
                 >
                     {
-                        (index === 3)
+                        (pageIndex === 3)
                             ? <div>&lt; Contacts &gt;</div>
                             : <div>Contacts</div>
                     }

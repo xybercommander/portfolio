@@ -1,15 +1,17 @@
+// import { useSelector } from 'react-redux';
 import './App.css';
 import Body from './components/Body/Body';
 import Navbar from './components/Navbar/Navbar';
 
 function App() {
 
-  var pageIndex = 1;
+  // const pageIndex = useSelector(state => state.pageIndex);
+  // const dispatch = useDispatch();
 
   return (
     <div className="App">
       <Navbar />
-      <Body pageIndex={pageIndex} />
+      <Body />
     </div>
   );
 }
