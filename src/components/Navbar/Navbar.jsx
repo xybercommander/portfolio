@@ -26,8 +26,8 @@ const Navbar = () => {
                 >
                     {
                         (pageIndex === 0)
-                            ? <div>&lt; Services &gt;</div>
-                            : <div>Services</div>
+                            ? <div>&lt; About &gt;</div>
+                            : <div>About</div>
                     }
                 </li>
                 {/* 2 */}
@@ -37,8 +37,8 @@ const Navbar = () => {
                 >
                     {
                         (pageIndex === 1)
-                            ? <div>&lt; Works &gt;</div>
-                            : <div>Works</div>
+                            ? <div>&lt; Services &gt;</div>
+                            : <div>Services</div>
                     }
                 </li>
                 {/* 3 */}
@@ -48,8 +48,8 @@ const Navbar = () => {
                 >
                     {
                         (pageIndex === 2)
-                            ? <div>&lt; Notes &gt;</div>
-                            : <div>Notes</div>
+                            ? <div>&lt; Works &gt;</div>
+                            : <div>Works</div>
                     }
                 </li>
                 {/* 4 */}

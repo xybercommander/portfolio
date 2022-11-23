@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+}
+
+.about-container {
+    width: 100%;
+    height: 85vh;
+    background-color: #2D2E32;
+
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.left-text {
+    height: 100%;
+    width: 50%;
+    padding: 20px 10px 20px 10px;
+    margin-left: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.software-dev {
+    width: 160px;
+    background-color: #63F5AC;
+    padding: 8px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.moto {
+    color: whitesmoke;
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.about-me {
+    max-width: 400px;
+    text-align: left;
+    font-size: 12px;
+    color: grey;
+}
+
+a:link, a:visited, a:active {
+    color: #63F5AC;
+}
+a:hover {
+    color: whitesmoke;
+}
+.lets-chat {
+    font-size: 20px;
+    text-align: left; 
+}
+
+.image-container {
+    margin-right: 30px;
+    margin-left: 30px;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
